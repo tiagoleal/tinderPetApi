@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-   <img alt="TinderPet" src="https://github.com/tiagoleal/tinderPet/blob/master/public/img/images/logo.png?raw=true" width="200">
+   <img alt="TinderPet" src="https://github.com/tiagoleal/tinderPetApp/raw/master/public/img/logo.png?raw=true" width="200">
   </a>
 </p>
 
