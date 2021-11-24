@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # host: localhost
+  # user: ubuntu
+  # password: Lucasdfg07
+  host: postgres
+  user: postgres
+  # password: Lucasdfg07
+
+development:
+  <<: *default
+  database: tinder_api_development
+
+test:
+  <<: *default
+  database: tinder_api_test
+
+production:
+  <<: *default
+  database: tinder_api_production
+  username: tinder_api
+  password: <%= ENV['TINDER_API_DATABASE_PASSWORD'] %>
